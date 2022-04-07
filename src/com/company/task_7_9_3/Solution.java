@@ -19,5 +19,7 @@ public class Solution {
                 System.out.println("Бум!");
             Thread.sleep(100);
         }
+
+
     }
 }
