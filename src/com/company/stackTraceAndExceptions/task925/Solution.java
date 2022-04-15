@@ -1,0 +1,46 @@
+package com.company.stackTraceAndExceptions.task925;
+
+import java.io.CharConversionException;
+import java.io.IOException;
+import java.nio.file.FileSystemException;
+
+/*
+Перехват выборочных исключений
+*/
+
+public class Solution {
+    public static void main(String[] args) {
+        handleExceptions(new Solution());
+    }
+
+    public static void handleExceptions(Solution obj) {
+        try {
+            obj.method1();
+            obj.method2();
+            obj.method3();
+        }
+        catch (Exception e) {
+            printStack(e);
+        }
+
+    }
+
+    public static void printStack(Throwable throwable) {
+        System.out.println(throwable);
+        for (StackTraceElement element : throwable.getStackTrace()) {
+            System.out.println(element);
+        }
+    }
+
+    public void method1() {
+        throw new NullPointerException();
+    }
+
+    public void method2() {
+        throw new IndexOutOfBoundsException();
+    }
+
+    public void method3() {
+        throw new NumberFormatException();
+    }
+}
