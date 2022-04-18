@@ -14,6 +14,12 @@ public class Solution {
         Map<String, Cat> map = createMap();
         Set<Cat> set = convertMapToSet(map);
         printCatSet(set);
+
+        String str = "Я не хочу изучать Java, я хочу большую зарплату";
+
+        int i = 432;
+
+        String s = Integer.toString(i);
     }
 
     public static Map<String, Cat> createMap() {
