@@ -1,4 +1,4 @@
-package com.company.questCore.level8.lecture11;
+package com.company.questCore.level8.lecture11.task2;
 
 public class Product {
     int id;

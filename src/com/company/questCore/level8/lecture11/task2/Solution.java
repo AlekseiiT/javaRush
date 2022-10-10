@@ -1,6 +1,6 @@
-package com.company.questCore.level8.lecture11;
+package com.company.questCore.level8.lecture11.task2;
 
-import com.company.questCore.level8.lecture11.constants.TaskConstants;
+import com.company.questCore.level8.lecture11.task2.constants.TaskConstants;
 
 import java.io.*;
 import java.util.ArrayList;
